@@ -75,6 +75,26 @@ function drawName(){
 	// draw text
 	ctx.fillText("Shreyashi", 50, 200);
 }
+// load image
+function drawImage(){
+
+	// get canvas
+	var canvas = document.getElementById("myCanvas");
+
+	// get drawing tool
+	var ctx = canvas.getContext("2d");
+
+	// make image
+	var img = new Image();
+
+	// image link
+	img.src = "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg";
+
+	// draw after load
+	img.onload = function(){
+		ctx.drawImage(img, 50, 50, 150, 100);
+	};
+}
 
 
 
