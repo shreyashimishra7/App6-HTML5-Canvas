@@ -33,4 +33,19 @@ var docMod = document.lastModified;
 alert("This file last modified " + docMod);
 
 // console message
-console.log("This file last modified " + docMod);
+console.log("This file last modified " + docMod); 
+// draw rectangle
+function drawRect(){
+
+	// get canvas
+	var canvas = document.getElementById("myCanvas");
+
+	// get drawing tool
+	var ctx = canvas.getContext("2d");
+
+	// draw box
+	ctx.fillStyle = "blue";
+	ctx.fillRect(50,50,100,100);
+}
+
+
