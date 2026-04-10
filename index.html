@@ -95,6 +95,18 @@ function drawImage(){
 		ctx.drawImage(img, 50, 50, 150, 100);
 	};
 }
+// clear canvas
+function clearCanvas(){
+
+	// get canvas
+	var canvas = document.getElementById("myCanvas");
+
+	// get drawing tool
+	var ctx = canvas.getContext("2d");
+
+	// clear everything
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
 
 
 
